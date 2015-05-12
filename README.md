@@ -23,6 +23,7 @@ If you find a bug/error in this guide please submit an issue.
 ---
 
 The Capybara installation consists of setting up the following components:
+
 1. Install the operating system(Ubnutu 14.04.1) and Packages / Dependencies
 1. Ruby
 1. System Users

@@ -26,7 +26,6 @@ The Capybara installation consists of setting up the following components:
 
 1. Install the operating system(Ubnutu 14.04.1) and Packages / Dependencies
 1. Ruby
-1. System Users
 1. Capybara
 
 ----------
@@ -96,6 +95,29 @@ Download Ruby and compile it:
 Install the Bundler Gem:
 
     gem install bundler --no-doc
+
+Make sure OpenSSL is installed, installing OpenSSL by the usual way:
+
+    apt-get install openssl
+
+### Try rebuild Ruby
+Got to Ruby directory and typed the following lines:
+
+    pushd ext/openssl
+    ruby extconf.rb
+    make
+    make install
+    popd
+
+All dependencies issues and stuff solved, then running:
+
+    ./configure
+    make
+    make install
+
+Rebuild Ruby finally.
+
+## 3. Capybara
 
 Install Capybara:
 

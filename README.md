@@ -95,3 +95,7 @@ Download Ruby and compile it:
 Install the Bundler Gem:
 
     gem install bundler --no-doc
+
+Install Capybara:
+
+    gem intall capybara

@@ -129,7 +129,11 @@ Install Capybara:
 
 ## 4. Capybara-WebKit
 
-Install Capybara-WebKit:
+Add the capybara-webkit gem to your Gemfile:
+
+    gem 'capybara-webkit'
+
+### Installing Qt:
 
     apt-get install qt5-default libqt5webkit5-dev
 

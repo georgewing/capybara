@@ -27,12 +27,16 @@ The Capybara installation consists of setting up the following components:
 1. Install the operating system(Ubnutu 14.04.1) and Packages / Dependencies
 1. Ruby
 1. Capybara
+1. Capybara-WebKit
 
 ----------
 
 ## 1. Installing the operating system (Ubnutu 14.04.1 LTS)
-### Add QT
-coming soon...
+### Add Qt libraries
+
+capybara-webkit depends on a WebKit implementation from Qt, a cross-platform development
+toolkit. You need to download the Qt libraries to build and install the gem. You can find instructions
+for downloading and installing QT on the [capybara-webkit wiki](https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit). capybara-webkit requires Qt version 4.8 or higher.
 
 ### Install the required tools for Capybara
 
@@ -122,3 +126,20 @@ Rebuild Ruby finally.
 Install Capybara:
 
     gem intall capybara
+
+## 4. Capybara-WebKit
+
+Install Capybara-WebKit:
+
+    apt-get install qt5-default libqt5webkit5-dev
+
+If you're on a fresh install of Ubuntu 14.04 you'll also need:
+
+    apt-get install g++
+
+Note that the version Qt distributed with Ubuntu 10.04 is not compatible with 
+capybara-webkit >= 0.14. But, you can compile Qt from source following this 
+[instructions](http://qt-project.org/doc/qt-4.8/install-x11.html).
+
+    apt-get install libqt4-dev
+

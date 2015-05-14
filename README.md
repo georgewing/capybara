@@ -1,4 +1,4 @@
-# capybara install
+# capybara install for Ubuntu 14.04
 
 ```
 Distribution     : Ubuntu 14.04.1 LTS
@@ -31,7 +31,7 @@ The Capybara installation consists of setting up the following components:
 
 ----------
 
-## 1. Installing the operating system (Ubnutu 14.04.1 LTS)
+## 1. Installing the operating system (Ubuntu 14.04.1 LTS)
 ### Add Qt libraries
 
 capybara-webkit depends on a WebKit implementation from Qt, a cross-platform development

@@ -127,13 +127,18 @@ Install Capybara:
 
     gem intall capybara
 
-## 4. Capybara-WebKit
+## 4. Capybara Drivers
+
+### Selenium
+
+    gem install s
+### Capybara-WebKit
 
 Add the capybara-webkit gem to your Gemfile:
 
     gem 'capybara-webkit'
 
-### Installing Qt:
+Installing Qt:
 
     apt-get install qt5-default libqt5webkit5-dev
 
@@ -147,3 +152,21 @@ capybara-webkit >= 0.14. But, you can compile Qt from source following this
 
     yum install libqt4-dev
 
+### Poltergeist
+
+Installing Phantomjs
+
+    yum -y install gcc gcc-c++ make flex bison gperf ruby \
+    openssl-devel freetype-devel fontconfig-devel libicu-devel sqlite-devel \
+    libpng-devel libjpeg-devel
+
+Then, launch the build:
+
+    git clone git://github.com/ariya/phantomjs.git
+    cd phantomjs
+    git checkout 2.0
+    ./build.sh
+
+Install Poltergeist:
+
+    gem install poltergeist

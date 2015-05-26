@@ -1,10 +1,6 @@
-require 'capybara'
+require 'capybara/poltergeist'
 
-Capybara.register_driver :selenium do |app|
-    Capybara::Selenium::Driver.new(app, :browser => :chrome)
-end
-
-session = Capybara::Session.new(:selenium)
+session = Capybara::Session.new(:poltergeist)
 
 session.visit "http://www.baidu.com"
 
